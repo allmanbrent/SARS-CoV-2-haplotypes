@@ -1,0 +1,310 @@
+IQ-TREE multicore version 2.1.4-beta COVID-edition for Linux 64-bit built Jun 24 2021
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    wilkcomp01.ccbb.utexas.edu (AVX2, FMA3, 755 GB RAM)
+Command: iqtree -s ../hamming_copy_240702.fasta -B 1000 --polytomy -m GTR
+Seed:    593238 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Tue Jul  2 17:28:22 2024
+Kernel:  AVX+FMA - 1 threads (112 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 112 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file ../hamming_copy_240702.fasta ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+WARNING: 222 sites contain only gaps or ambiguous characters.
+Alignment has 53 sequences with 30125 columns, 163 distinct patterns
+17 parsimony-informative, 70 singleton sites, 30038 constant sites
+                                                                  Gap/Ambiguity  Composition  p-value
+   1  hCoV-19/USA/GA-GPHL-0090/2021|EPI_ISL_1262493|2021-01-20            0.87%    passed     95.36%
+   2  hCoV-19/USA/GA-GPHL-0005/2021|EPI_ISL_965843|2021-01-12             0.85%    passed     95.30%
+   3  hCoV-19/USA/GA-GPHL-0019/2020|EPI_ISL_1225320|2020-12-22            0.83%    passed     94.41%
+   4  hCoV-19/USA/GA-CDC-STM-000021222/2021|EPI_ISL_1269308|2021-02-15    0.77%    passed     90.21%
+   5  hCoV-19/USA/GA-EHC-798T/2021|EPI_ISL_6913933|2021-02-12             0.74%    passed     89.10%
+   6  hCoV-19/USA/GA-EHC-705E/2021|EPI_ISL_6913932|2021-02-01             0.74%    passed     89.11%
+   7  hCoV-19/USA/GA-EHC-962B/2021|EPI_ISL_6913934|2021-02-26             0.74%    passed     89.10%
+   8  hCoV-19/USA/GA-EHC-1064Z/2021|EPI_ISL_6913935|2021-03-20            0.74%    passed     89.40%
+   9  hCoV-19/USA/GA-CDC-2-4068850/2021|EPI_ISL_1446880|2021-01-13        0.92%    passed     95.43%
+  10  hCoV-19/USA/GA-CDC-2-3979391/2021|EPI_ISL_1273008|2021-02-12        0.86%    passed     94.72%
+  11  hCoV-19/USA/GA-CDC-2-4068909/2021|EPI_ISL_1446911|2021-01-13        0.86%    passed     95.07%
+  12  hCoV-19/USA/GA-CDC-2-3993058/2021|EPI_ISL_1318560|2021-02-24        0.86%    passed     94.79%
+  13  hCoV-19/USA/GA-CDC-2-3992991/2021|EPI_ISL_1318590|2021-02-25        0.86%    passed     95.18%
+  14  hCoV-19/USA/GA-CDC-2-3992965/2021|EPI_ISL_1318583|2021-02-25        0.86%    passed     95.02%
+  15  hCoV-19/USA/GA-CDC-STM-000008463/2021|EPI_ISL_4961567|2021-02-01    0.89%    passed     95.26%
+  16  hCoV-19/USA/GA-CDC-STM-000020151/2021|EPI_ISL_1269808|2021-02-21    0.80%    passed     90.55%
+  17  hCoV-19/USA/GA-CDC-STM-000010579/2021|EPI_ISL_1089191|2021-02-07    1.52%    passed     91.82%
+  18  hCoV-19/USA/GA-CDC-LC00002040/2020|EPI_ISL_887929|2020-12-27       96.25%    failed      0.00%
+  19  hCoV-19/USA/GA-CDC-LC0001984/2020|EPI_ISL_1029695|2020-12-26        1.37%    passed     94.62%
+  20  hCoV-19/USA/GA-CDC-LC0016543/2021|EPI_ISL_1161626|2021-02-09        4.74%    passed     95.18%
+  21  hCoV-19/USA/GA-CDC-LC0020172/2021|EPI_ISL_1221962|2021-02-22        4.74%    passed     94.98%
+  22  hCoV-19/USA/GA-CDC-LC00001984/2020|EPI_ISL_887659|2020-12-26        4.58%    passed     95.07%
+  23  hCoV-19/USA/GA-CDC-QDX21487090/2021|EPI_ISL_1086990|2021-01-25      1.14%    passed     93.16%
+  24  hCoV-19/USA/GA-CDC-QDX21488176/2021|EPI_ISL_1086940|2021-01-25      1.14%    passed     93.02%
+  25  hCoV-19/USA/GA-QDX-4182/2021|EPI_ISL_915310|2021-01-15              1.14%    passed     93.37%
+  26  hCoV-19/USA/GA-CDC-LC00001008/2020|EPI_ISL_887938|2020-12-26       96.30%    passed     25.67%
+  27  hCoV-19/USA/GA-CDC-LC00001030/2020|EPI_ISL_887932|2020-12-23       96.42%    failed      0.19%
+  28  hCoV-19/USA/GA-CDC-LC00001187/2020|EPI_ISL_887924|2020-12-26       96.42%    failed      0.19%
+  29  hCoV-19/USA/GA-CDC-LC0010659/2021|EPI_ISL_4965360|2021-01-26       96.42%    failed      0.22%
+  30  hCoV-19/USA/GA-CDC-LC00001207/2020|EPI_ISL_887927|2020-12-26       96.42%    failed      0.19%
+  31  hCoV-19/USA/GA-9210018432/2021|EPI_ISL_2019616|2021-01-14          87.32%    passed     20.21%
+  32  hCoV-19/USA/GA-9210033385/2021|EPI_ISL_2019595|2021-01-22          87.32%    passed     21.06%
+  33  hCoV-19/USA/GA-9210045427/2021|EPI_ISL_2928315|2021-02-02          87.32%    passed     23.38%
+  34  hCoV-19/USA/GA-9210018508/2021|EPI_ISL_2928328|2021-01-13          87.32%    passed     23.46%
+  35  hCoV-19/USA/GA-9210037490/2021|EPI_ISL_2928316|2021-01-22          87.32%    passed     26.84%
+  36  hCoV-19/USA/GA-9210018170/2021|EPI_ISL_2928326|2021-01-14          87.33%    passed     24.77%
+  37  hCoV-19/USA/GA-9210018498/2021|EPI_ISL_2928329|2021-01-13          87.32%    passed     24.29%
+  38  hCoV-19/USA/GA-9210056159/2021|EPI_ISL_2928327|2021-02-15          87.35%    passed     23.43%
+  39  hCoV-19/USA/GA-9210073711/2020|EPI_ISL_2924129|2020-12-05          87.31%    passed     20.93%
+  40  hCoV-19/USA/GA-9210034112/2021|EPI_ISL_2019697|2021-01-05          87.31%    passed     23.31%
+  41  hCoV-19/USA/GA-9210027257/2021|EPI_ISL_2019634|2021-01-14          87.31%    passed     23.31%
+  42  hCoV-19/USA/GA-9210073712/2020|EPI_ISL_2924130|2020-12-01          87.31%    passed     23.31%
+  43  hCoV-19/USA/GA-9210070482/2021|EPI_ISL_2020008|2021-01-19          87.31%    passed     23.40%
+  44  hCoV-19/USA/GA-9210070396/2020|EPI_ISL_2019982|2020-12-17          87.31%    passed     23.40%
+  45  hCoV-19/USA/GA-9210070402/2020|EPI_ISL_2019988|2020-12-22          87.31%    passed     19.33%
+  46  hCoV-19/USA/GA-9210070483/2021|EPI_ISL_2020009|2021-01-19          87.31%    passed     23.40%
+  47  hCoV-19/USA/GA-9210034086/2021|EPI_ISL_2019673|2021-01-04          87.31%    passed     23.31%
+  48  hCoV-19/USA/GA-9210070401/2020|EPI_ISL_2019987|2020-12-21          87.31%    passed     23.31%
+  49  hCoV-19/USA/GA-9210073689/2020|EPI_ISL_2020027|2020-12-01          87.31%    passed     22.56%
+  50  hCoV-19/USA/GA-9210034188/2020|EPI_ISL_2924072|2020-12-28          87.31%    passed     23.31%
+  51  hCoV-19/USA/GA-9210034076/2021|EPI_ISL_2019663|2021-01-08          87.31%    passed     23.31%
+  52  hCoV-19/USA/GA-9210034398/2020|EPI_ISL_2019806|2020-12-02          87.31%    passed     23.40%
+  53  hCoV-19/USA/GA-CDC-LC00003031/2020|EPI_ISL_888282|2020-12-30       96.45%    failed      0.00%
+WARNING: 29 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                                              49.61%  6 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: hCoV-19/USA/GA-EHC-962B/2021|EPI_ISL_6913934|2021-02-26 is identical to hCoV-19/USA/GA-EHC-798T/2021|EPI_ISL_6913933|2021-02-12 but kept for subsequent analysis
+NOTE: hCoV-19/USA/GA-CDC-LC00001187/2020|EPI_ISL_887924|2020-12-26 is identical to hCoV-19/USA/GA-CDC-LC00001030/2020|EPI_ISL_887932|2020-12-23 but kept for subsequent analysis
+NOTE: hCoV-19/USA/GA-9210070483/2021|EPI_ISL_2020009|2021-01-19 is identical to hCoV-19/USA/GA-9210070482/2021|EPI_ISL_2020008|2021-01-19 but kept for subsequent analysis
+NOTE: 2 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: hCoV-19/USA/GA-CDC-LC00001207/2020|EPI_ISL_887927|2020-12-26 (identical to hCoV-19/USA/GA-CDC-LC00001030/2020|EPI_ISL_887932|2020-12-23) is ignored but added at the end
+NOTE: hCoV-19/USA/GA-9210034398/2020|EPI_ISL_2019806|2020-12-02 (identical to hCoV-19/USA/GA-9210070482/2021|EPI_ISL_2020008|2021-01-19) is ignored but added at the end
+Alignment was printed to ../hamming_copy_240702.fasta.uniqueseq.phy
+
+For your convenience alignment with unique sequences printed to ../hamming_copy_240702.fasta.uniqueseq.phy
+Creating fast initial parsimony tree by random order stepwise addition...
+0.010 seconds, parsimony score: 91 (based on 87 sites)
+Generating 1000 samples for ultrafast bootstrap (seed: 593238)...
+
+NOTE: 0 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -41551.517
+2. Current log-likelihood: -41458.207
+Optimal log-likelihood: -41458.176
+Rate parameters:  A-C: 0.40960  A-G: 0.50318  A-T: 0.27904  C-G: 0.09398  C-T: 2.54264  G-T: 1.00000
+Base frequencies:  A: 0.298  C: 0.184  G: 0.195  T: 0.323
+Parameters optimization took 2 rounds (0.020 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 0.018639 sec (of wall-clock time) 0.018630 sec(of CPU time)
+Computing RapidNJ tree took 0.001002 sec (of wall-clock time) 0.000000 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -41490.131
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 1.612 second
+Computing log-likelihood of 98 initial trees ... 0.227 seconds
+Current best score: -41446.544
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -41446.475
+BETTER TREE FOUND at iteration 2: -41446.474
+Iteration 10 / LogL: -41446.489 / Time: 0h:0m:3s
+BETTER TREE FOUND at iteration 11: -41446.474
+Iteration 20 / LogL: -41446.536 / Time: 0h:0m:4s
+Finish initializing candidate tree set (20)
+Current best tree score: -41446.474 / CPU time: 4.325
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -41446.516 / Time: 0h:0m:5s (0h:0m:14s left)
+Iteration 40 / LogL: -41457.279 / Time: 0h:0m:5s (0h:0m:10s left)
+Iteration 50 / LogL: -41446.574 / Time: 0h:0m:6s (0h:0m:8s left)
+Log-likelihood cutoff on original alignment: -41484.065
+Iteration 60 / LogL: -41446.534 / Time: 0h:0m:7s (0h:0m:6s left)
+Iteration 70 / LogL: -41446.474 / Time: 0h:0m:8s (0h:0m:5s left)
+Iteration 80 / LogL: -41446.538 / Time: 0h:0m:9s (0h:0m:3s left)
+Iteration 90 / LogL: -41450.774 / Time: 0h:0m:10s (0h:0m:2s left)
+BETTER TREE FOUND at iteration 93: -41446.473
+BETTER TREE FOUND at iteration 95: -41446.473
+Iteration 100 / LogL: -41446.504 / Time: 0h:0m:10s (0h:0m:10s left)
+Log-likelihood cutoff on original alignment: -41484.332
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.880
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 110 / LogL: -41446.533 / Time: 0h:0m:11s (0h:0m:9s left)
+BETTER TREE FOUND at iteration 111: -41446.473
+Iteration 120 / LogL: -41448.091 / Time: 0h:0m:12s (0h:0m:9s left)
+Iteration 130 / LogL: -41446.561 / Time: 0h:0m:13s (0h:0m:8s left)
+Iteration 140 / LogL: -41446.478 / Time: 0h:0m:14s (0h:0m:7s left)
+Iteration 150 / LogL: -41450.674 / Time: 0h:0m:15s (0h:0m:6s left)
+Log-likelihood cutoff on original alignment: -41486.145
+Iteration 160 / LogL: -41446.474 / Time: 0h:0m:16s (0h:0m:5s left)
+Iteration 170 / LogL: -41446.478 / Time: 0h:0m:18s (0h:0m:4s left)
+BETTER TREE FOUND at iteration 179: -41446.473
+Iteration 180 / LogL: -41446.524 / Time: 0h:0m:19s (0h:0m:10s left)
+Iteration 190 / LogL: -41446.533 / Time: 0h:0m:20s (0h:0m:9s left)
+Iteration 200 / LogL: -41446.530 / Time: 0h:0m:21s (0h:0m:8s left)
+Log-likelihood cutoff on original alignment: -41486.145
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.932
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 210 / LogL: -41448.102 / Time: 0h:0m:22s (0h:0m:9s left)
+Iteration 220 / LogL: -41446.550 / Time: 0h:0m:23s (0h:0m:8s left)
+Iteration 230 / LogL: -41449.144 / Time: 0h:0m:24s (0h:0m:7s left)
+BETTER TREE FOUND at iteration 240: -41446.473
+Iteration 240 / LogL: -41446.473 / Time: 0h:0m:25s (0h:0m:10s left)
+Iteration 250 / LogL: -41446.481 / Time: 0h:0m:26s (0h:0m:9s left)
+Log-likelihood cutoff on original alignment: -41486.927
+Iteration 260 / LogL: -41446.583 / Time: 0h:0m:28s (0h:0m:8s left)
+Iteration 270 / LogL: -41446.473 / Time: 0h:0m:29s (0h:0m:7s left)
+Iteration 280 / LogL: -41446.533 / Time: 0h:0m:31s (0h:0m:6s left)
+Iteration 290 / LogL: -41446.613 / Time: 0h:0m:32s (0h:0m:5s left)
+Iteration 300 / LogL: -41454.582 / Time: 0h:0m:33s (0h:0m:4s left)
+Log-likelihood cutoff on original alignment: -41486.927
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.937
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 310 / LogL: -41446.590 / Time: 0h:0m:35s (0h:0m:10s left)
+Iteration 320 / LogL: -41446.760 / Time: 0h:0m:36s (0h:0m:9s left)
+BETTER TREE FOUND at iteration 322: -41446.473
+Iteration 330 / LogL: -41446.528 / Time: 0h:0m:37s (0h:0m:10s left)
+Iteration 340 / LogL: -41446.578 / Time: 0h:0m:39s (0h:0m:9s left)
+Iteration 350 / LogL: -41446.475 / Time: 0h:0m:40s (0h:0m:8s left)
+Log-likelihood cutoff on original alignment: -41486.927
+Iteration 360 / LogL: -41449.099 / Time: 0h:0m:42s (0h:0m:7s left)
+BETTER TREE FOUND at iteration 369: -41446.473
+Iteration 370 / LogL: -41446.515 / Time: 0h:0m:43s (0h:0m:11s left)
+Iteration 380 / LogL: -41446.517 / Time: 0h:0m:44s (0h:0m:10s left)
+Iteration 390 / LogL: -41446.530 / Time: 0h:0m:46s (0h:0m:9s left)
+Iteration 400 / LogL: -41448.100 / Time: 0h:0m:47s (0h:0m:8s left)
+Log-likelihood cutoff on original alignment: -41486.927
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.946
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 410 / LogL: -41446.517 / Time: 0h:0m:49s (0h:0m:10s left)
+BETTER TREE FOUND at iteration 418: -41446.473
+Iteration 420 / LogL: -41446.477 / Time: 0h:0m:50s (0h:0m:11s left)
+Iteration 430 / LogL: -41446.570 / Time: 0h:0m:51s (0h:0m:10s left)
+Iteration 440 / LogL: -41448.101 / Time: 0h:0m:53s (0h:0m:9s left)
+Iteration 450 / LogL: -41446.617 / Time: 0h:0m:54s (0h:0m:8s left)
+Log-likelihood cutoff on original alignment: -41486.927
+Iteration 460 / LogL: -41446.533 / Time: 0h:0m:56s (0h:0m:7s left)
+Iteration 470 / LogL: -41446.606 / Time: 0h:0m:57s (0h:0m:5s left)
+Iteration 480 / LogL: -41446.473 / Time: 0h:0m:59s (0h:0m:4s left)
+Iteration 490 / LogL: -41455.485 / Time: 0h:1m:0s (0h:0m:3s left)
+Iteration 500 / LogL: -41446.504 / Time: 0h:1m:2s (0h:0m:2s left)
+Log-likelihood cutoff on original alignment: -41486.927
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.962
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+BETTER TREE FOUND at iteration 501: -41446.473
+Iteration 510 / LogL: -41448.102 / Time: 0h:1m:4s (0h:0m:11s left)
+Iteration 520 / LogL: -41446.605 / Time: 0h:1m:6s (0h:0m:10s left)
+Iteration 530 / LogL: -41448.090 / Time: 0h:1m:8s (0h:0m:9s left)
+Iteration 540 / LogL: -41446.609 / Time: 0h:1m:9s (0h:0m:7s left)
+Iteration 550 / LogL: -41446.552 / Time: 0h:1m:11s (0h:0m:6s left)
+Log-likelihood cutoff on original alignment: -41486.927
+Iteration 560 / LogL: -41446.487 / Time: 0h:1m:13s (0h:0m:5s left)
+Iteration 570 / LogL: -41449.181 / Time: 0h:1m:15s (0h:0m:4s left)
+Iteration 580 / LogL: -41446.473 / Time: 0h:1m:17s (0h:0m:2s left)
+Iteration 590 / LogL: -41446.473 / Time: 0h:1m:19s (0h:0m:1s left)
+Iteration 600 / LogL: -41446.508 / Time: 0h:1m:20s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -41487.038
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.950
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 610 / LogL: -41446.474 / Time: 0h:1m:22s (0h:0m:12s left)
+Iteration 620 / LogL: -41458.907 / Time: 0h:1m:24s (0h:0m:10s left)
+Iteration 630 / LogL: -41448.102 / Time: 0h:1m:26s (0h:0m:9s left)
+Iteration 640 / LogL: -41446.474 / Time: 0h:1m:28s (0h:0m:8s left)
+Iteration 650 / LogL: -41446.534 / Time: 0h:1m:29s (0h:0m:6s left)
+Log-likelihood cutoff on original alignment: -41487.169
+Iteration 660 / LogL: -41446.528 / Time: 0h:1m:32s (0h:0m:5s left)
+Iteration 670 / LogL: -41446.474 / Time: 0h:1m:34s (0h:0m:4s left)
+Iteration 680 / LogL: -41446.571 / Time: 0h:1m:36s (0h:0m:2s left)
+Iteration 690 / LogL: -41446.507 / Time: 0h:1m:37s (0h:0m:1s left)
+Iteration 700 / LogL: -41448.189 / Time: 0h:1m:39s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -41487.169
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.941
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 710 / LogL: -41446.507 / Time: 0h:1m:42s (0h:0m:12s left)
+Iteration 720 / LogL: -41446.516 / Time: 0h:1m:44s (0h:0m:11s left)
+Iteration 730 / LogL: -41446.473 / Time: 0h:1m:46s (0h:0m:10s left)
+Iteration 740 / LogL: -41446.610 / Time: 0h:1m:48s (0h:0m:8s left)
+Iteration 750 / LogL: -41449.204 / Time: 0h:1m:51s (0h:0m:7s left)
+Log-likelihood cutoff on original alignment: -41487.169
+Iteration 760 / LogL: -41446.631 / Time: 0h:1m:53s (0h:0m:5s left)
+Iteration 770 / LogL: -41446.533 / Time: 0h:1m:56s (0h:0m:4s left)
+Iteration 780 / LogL: -41446.485 / Time: 0h:1m:58s (0h:0m:3s left)
+Iteration 790 / LogL: -41446.615 / Time: 0h:2m:0s (0h:0m:1s left)
+Iteration 800 / LogL: -41448.152 / Time: 0h:2m:2s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -41487.233
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.929
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+BETTER TREE FOUND at iteration 804: -41446.473
+Iteration 810 / LogL: -41448.105 / Time: 0h:2m:5s (0h:0m:14s left)
+Iteration 820 / LogL: -41446.571 / Time: 0h:2m:8s (0h:0m:13s left)
+Iteration 830 / LogL: -41448.187 / Time: 0h:2m:10s (0h:0m:11s left)
+Iteration 840 / LogL: -41448.099 / Time: 0h:2m:12s (0h:0m:10s left)
+Iteration 850 / LogL: -41446.473 / Time: 0h:2m:15s (0h:0m:8s left)
+Log-likelihood cutoff on original alignment: -41488.129
+Iteration 860 / LogL: -41446.504 / Time: 0h:2m:17s (0h:0m:7s left)
+Iteration 870 / LogL: -41446.600 / Time: 0h:2m:20s (0h:0m:5s left)
+Iteration 880 / LogL: -41446.585 / Time: 0h:2m:22s (0h:0m:3s left)
+Iteration 890 / LogL: -41449.104 / Time: 0h:2m:25s (0h:0m:2s left)
+Iteration 900 / LogL: -41446.483 / Time: 0h:2m:27s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -41488.140
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.917
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 910 / LogL: -41446.504 / Time: 0h:2m:30s (0h:0m:14s left)
+Iteration 920 / LogL: -41448.091 / Time: 0h:2m:32s (0h:0m:13s left)
+Iteration 930 / LogL: -41446.477 / Time: 0h:2m:35s (0h:0m:11s left)
+Iteration 940 / LogL: -41459.198 / Time: 0h:2m:38s (0h:0m:10s left)
+Iteration 950 / LogL: -41446.533 / Time: 0h:2m:40s (0h:0m:8s left)
+Log-likelihood cutoff on original alignment: -41488.140
+Iteration 960 / LogL: -41446.530 / Time: 0h:2m:43s (0h:0m:6s left)
+Iteration 970 / LogL: -41446.483 / Time: 0h:2m:46s (0h:0m:5s left)
+Iteration 980 / LogL: -41446.474 / Time: 0h:2m:49s (0h:0m:3s left)
+Iteration 990 / LogL: -41446.524 / Time: 0h:2m:52s (0h:0m:1s left)
+Iteration 1000 / LogL: -41446.489 / Time: 0h:2m:55s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -41488.140
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.933
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+WARNING: bootstrap analysis did not converge. You should rerun with higher number of iterations (-nm option)
+TREE SEARCH COMPLETED AFTER 1001 ITERATIONS / Time: 0h:2m:55s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -41446.473
+Optimal log-likelihood: -41446.469
+Rate parameters:  A-C: 0.41813  A-G: 0.51434  A-T: 0.27677  C-G: 0.09416  C-T: 2.52533  G-T: 1.00000
+Base frequencies:  A: 0.298  C: 0.184  G: 0.195  T: 0.323
+Parameters optimization took 1 rounds (0.011 sec)
+BEST SCORE FOUND : -41446.469
+Creating bootstrap support values...
+Split supports printed to NEXUS file ../hamming_copy_240702.fasta.splits.nex
+Collapsing near-zero internal branches... 35 collapsed
+Total tree length: 0.015
+
+Total number of iterations: 1001
+CPU time used for tree search: 173.086 sec (0h:2m:53s)
+Wall-clock time used for tree search: 175.739 sec (0h:2m:55s)
+Total CPU time used: 173.636 sec (0h:2m:53s)
+Total wall-clock time used: 176.309 sec (0h:2m:56s)
+
+Computing bootstrap consensus tree...
+Reading input file ../hamming_copy_240702.fasta.splits.nex...
+51 taxa and 2284 splits.
+Consensus tree written to ../hamming_copy_240702.fasta.contree
+Reading input trees file ../hamming_copy_240702.fasta.contree
+Log-likelihood of consensus tree: -41447.184
+
+Analysis results written to: 
+  IQ-TREE report:                ../hamming_copy_240702.fasta.iqtree
+  Maximum-likelihood tree:       ../hamming_copy_240702.fasta.treefile
+  Likelihood distances:          ../hamming_copy_240702.fasta.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          ../hamming_copy_240702.fasta.splits.nex
+  Consensus tree:                ../hamming_copy_240702.fasta.contree
+  Screen log file:               ../hamming_copy_240702.fasta.log
+
+Date and Time: Tue Jul  2 17:31:19 2024
